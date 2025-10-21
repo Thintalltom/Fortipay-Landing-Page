@@ -1,97 +1,62 @@
-import React from "react";
-import { FiArrowUpRight } from "react-icons/fi";
-
+import Dice from '../../assets/DiceFour.svg';
+import Device from '../../assets/Devices.svg';
+import Contactless from '../../assets/ContactlessPayment.svg';
 const FeatureGrid = () => {
-  const features = [
-    {
-      id: 1,
-      title: "Innovation",
-      description:
-        "We push the boundaries of what’s possible through creativity, technology, and forward-thinking solutions.",
-      size: "large",
-      bg: "bg-[#013220]",
-    },
-    {
-      id: 2,
-      title: "Trust Through Transparency",
-      description:
-        "Integrity and honesty are at the heart of everything we do. We build trust by being open.",
-      size: "small",
-      bg: "bg-white",
-    },
-    {
-      id: 3,
-      title: "Simplicity at Scale",
-      description:
-        "We transform complexity into clarity, delivering seamless user experiences that scale effortlessly.",
-      size: "small",
-      bg: "bg-orange-500 text-white",
-    },
-    {
-      id: 4,
-      title: "Collaboration",
-      description:
-        "We believe in the power of teamwork. Together, we achieve more by leveraging diverse strengths.",
-      size: "small",
-      bg: "bg-white",
-    },
-    {
-      id: 5,
-      title: "Integrity First",
-      description:
-        "We do what is right, not what is easy. Accountability and ethics guide our decisions.",
-      size: "small",
-      bg: "bg-[#013220]",
-    },
-  ];
-
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-6">
-      {/* Large Card */}
-      {features
-        .filter((item) => item.size === "large")
-        .map((feature) => (
-          <div
-            key={feature.id}
-            className={`p-6 rounded-lg text-white flex flex-col justify-between shadow-md hover:shadow-xl transition ${feature.bg} md:row-span-2`}
-          >
-            <div>
-              <h2 className="text-2xl font-bold mb-3">{feature.title}</h2>
-              <p className="text-sm opacity-90">{feature.description}</p>
+    <div>
+      <div className='grid grid-cols-3 pt-[30px] gap-[12px]'>
+        <div className='col-span-2 bg-[#EBF8FF] rounded-[12px] grid grid-cols-2 '>
+          <div className="p-[32px]">
+
+          <div className='flex bg-[#EBF8FF] flex-col gap-[10px] h-[600px] justify-between'>
+            <div className='flex flex-col gap-[10px]'>
+              <img src={Dice} alt='dice' className='w-[33.75px] h-[33.75px]' />
+              <p className="font-[Manrope] text-[24px] text-medium">🚀 Innovation that Protects</p>
+              <p className="w-[326px] font-[Lato] text-[#7C7C7C] font-regular">We continuously evolve our fraud prevention technology to stay ahead of emerging threats, ensuring our clients are always protected by the most advanced tools in the industry.</p>
             </div>
-            <button className="mt-4 flex items-center gap-2 bg-white text-black px-4 py-2 rounded-md w-fit hover:bg-gray-200 transition">
-              Learn more <FiArrowUpRight />
-            </button>
+            <button className="bg-[#03377D] w-[120px] h-[44px] rounded-full mb-[20px] text-white">Get started</button>
           </div>
-        ))}
-
-      {/* Image Placeholder */}
-      <div className="bg-gray-200 rounded-lg shadow-md hover:shadow-xl transition md:col-span-1 md:row-span-2"></div>
-
-      {/* Small Cards */}
-      {features
-        .filter((item) => item.size === "small")
-        .map((feature) => (
-          <div
-            key={feature.id}
-            className={`p-5 rounded-lg shadow-md hover:shadow-xl transition flex-1 ${feature.bg} ${
-              feature.bg.includes("white") ? "text-black" : "text-white"
-            }`}
-          >
-            <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
-            <p className="text-sm opacity-80 mb-3">{feature.description}</p>
-            <button
-              className={`flex items-center gap-2 px-3 py-2 rounded-md ${
-                feature.bg.includes("white")
-                  ? "bg-black text-white"
-                  : "bg-white text-black"
-              } hover:opacity-80 transition`}
-            >
-              {/* Learn more <FiArrowUpRight /> */}
-            </button>
           </div>
-        ))}
+          <div className=" bg-[#D9D9D9] rounded-tr-[20px] rounded-br-[20px]">
+          
+          </div>
+        </div>
+        <div className=" grid grid-rows-2 gap-[10px]">
+          <div className="bg-[#EBF8FF] rounded-[20px] p-[32px] flex flex-col gap-[41px]">
+            <img src={Contactless} alt='device' className="w-[45px] h-[45px]" />
+            <div className="flex flex-col gap-[10px]">
+            <h3 className="text-[#03377D] text-[24px] font-[Manrope] font-medium text-nowrap">🔒 Trust Through Transparency</h3>
+            <p className="text-[#7C7C7C] font-[Lato] text-[16px] leading-6">We believe security should build confidence, not confusion. Every FortiPay solution is designed to give businesses clear insights, actionable data, and full visibility into their fraud defenses.</p>
+            </div>
+          </div>
+          <div className="bg-[#EBF8FF] rounded-[20px] p-[32px] flex flex-col gap-[41px]">
+            <img src={Device} alt='device' className="w-[45px] h-[45px]" />
+            <div className="flex flex-col gap-[10px]">
+            <h3 className="text-[#03377D] text-[24px] font-[Manrope] font-medium text-nowrap">Simplicity at Scale</h3>
+            <p className="text-[#7C7C7C] font-[Lato] text-[16px] leading-6">Fraud protection shouldn’t slow you down. Our systems are designed to integrate effortlessly, adapt quickly, and deliver results—no matter how complex your operations become.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div className="grid grid-cols-2 pt-[20px] gap-[24px] ">
+      <div className="bg-[#EBF8FF] p-[32px] rounded-[20px] h-[319px] flex flex-col justify-between">
+    <img src={Contactless} alt='device' className="w-[45px] h-[45px]" />
+    <div className="flex flex-col gap-[10px]">
+            <h3 className="text-[#03377D] text-[24px] font-[Manrope] font-medium text-nowrap">Collaboration for Growth</h3>
+            <p className="text-[#7C7C7C] font-[Lato] text-[16px] leading-6">We grow when our clients grow. That’s why we work closely with merchants, payment partners, and developers to refine solutions that serve real business needs.</p>
+            </div>
+      </div>
+      <div className="bg-[#EBF8FF] p-[32px] rounded-[20px] h-[319px] flex flex-col justify-between">
+     <img src={Device} alt='device' className="w-[45px] h-[45px]" />
+    <div className="flex flex-col gap-[10px]">
+            <h3 className="text-[#03377D] text-[24px] font-[Manrope] font-medium text-nowrap"> Integrity First</h3>
+            <p className="text-[#7C7C7C] font-[Lato] text-[16px] leading-6">Every decision we make is grounded in honesty, reliability, and a commitment to safeguarding the trust of businesses and their customers.</p>
+            </div>
+      </div>
+      </div>
     </div>
+
   );
 };
 
