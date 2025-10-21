@@ -12,11 +12,8 @@ const Solution = () => {
       <ImageSection />
       <Features />
       <Industries />
-   
-        <WhyFortiPay />
-      
-  
-       <NewsLetter />
+      <WhyFortiPay />
+      <NewsLetter />
     </div>
   )
 }

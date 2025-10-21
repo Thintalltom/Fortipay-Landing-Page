@@ -7,10 +7,16 @@ import Section from './Home/Section'
 import Questions from './Home/Questions'
 import BlogSection from './Home/BlogSection'
 import GetStartedSection from './Home/GetStartedSection'
+import SEO from '../components/SEO/Seo'
 
 const Home = () => {
     return (
         <div>
+             <SEO
+        title="FortiPay - Fast Payments for Business"
+        description="Accept and send payments with FortiPay across Africa securely."
+        url=" replace with url"
+      />
             <Banner />
             <Trusted />
             <ValuePreposition />
