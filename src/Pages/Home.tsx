@@ -7,7 +7,7 @@ import Section from './Home/Section'
 import Questions from './Home/Questions'
 import BlogSection from './Home/BlogSection'
 import GetStartedSection from './Home/GetStartedSection'
-import SEO from '../components/SEO/Seo'
+import SEO from '../components/SEO/SEO'
 
 const Home = () => {
     return (

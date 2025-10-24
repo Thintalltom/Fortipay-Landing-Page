@@ -1,16 +1,18 @@
 import { Accordion } from '../../components/Accordion/Accordion'
 import TagButton from '../../components/TagButton'
 import QuestionsIcon from '../../assets/Questions.png' 
+import { useContentful } from '../../contexts/ContentfulContext'
 const Questions = () => {
+       const { questionText, questionSubText } = useContentful()
   return (
     <section className='p-[80px]'>
 
        <div className='flex justify-between items-start  gap-8'>
         <div className='flex-1 '>
               <TagButton>SECTION TITLE</TagButton>
-              <p className='font-[Manrope] text-[38px] font-medium text-[#03377D]'>Your Questions.</p>
-              <p className='font-[Manrope] text-[38px] font-medium text-[#03377D]'>Answered.</p>
-              <p className='text-[#848484] font-[Lato] text-[16px]'>Contact us if you have any other questions.</p>
+              <p className='font-[Manrope] text-[38px] font-medium text-[#03377D]'>{questionText}</p>
+              {/* <p className='font-[Manrope] text-[38px] font-medium text-[#03377D]'>Answered.</p> */}
+              <p className='text-[#848484] font-[Lato] text-[16px]'>{questionSubText}</p>
               <img src={QuestionsIcon} alt="" />
         </div>
         <div className='flex-1'>

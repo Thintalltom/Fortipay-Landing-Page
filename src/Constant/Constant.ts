@@ -205,22 +205,22 @@ import fan from '../assets/fan.svg'
 
 export const SectionCard = [
   {
-    icon: fan,
+    icon: "https://images.ctfassets.net/t38lsvt2xzqb/3caLNsQfLZj1orEeu7VZuB/b48a86dae99036fbf2b370acb602788b/FAN.svg",
     header: 'AI Risk Engine',
     text: 'Analyze every transaction in milliseconds with adaptive AI that flags suspicious behavior before it impacts your revenue. FortiPay’s learning engine evolves with emerging fraud tactics to keep your business secure.'
   },
    {
-    icon: fan,
+    icon: "https://images.ctfassets.net/t38lsvt2xzqb/3caLNsQfLZj1orEeu7VZuB/b48a86dae99036fbf2b370acb602788b/FAN.svg",
     header: 'Chargeback Protection',
     text: 'Reduce costly disputes and losses with proactive monitoring and automated evidence collection for chargebacks. FortiPay helps you fight fraud effectively while protecting profits and customer trust.'
   },
    {
-    icon: fan,
+    icon: "https://images.ctfassets.net/t38lsvt2xzqb/3caLNsQfLZj1orEeu7VZuB/b48a86dae99036fbf2b370acb602788b/FAN.svg",
     header: 'Account Takeover Defense',
     text: 'Detect unusual behavior like location or device changes using behavioral biometrics to prevent unauthorized access. FortiPay keeps accounts safe without adding friction to the customer experience.'
   },
    {
-    icon: fan,
+    icon: "https://images.ctfassets.net/t38lsvt2xzqb/3caLNsQfLZj1orEeu7VZuB/b48a86dae99036fbf2b370acb602788b/FAN.svg",
     header: 'Easy API Integration',
     text: 'Connect FortiPay to your systems with lightweight APIs and SDKs for fast, disruption-free integration. Our plug-and-play approach ensures protection without slowing your business operations.'
   },

@@ -5,7 +5,8 @@ const TestimonialCard = ({ rating, message, name, role, image }: any) => {
     <div className="w-[350px] h-[420px] cursor-pointer flex flex-col justify-between bg-white shadow-md border border-gray-200 rounded-xl p-6">
       {/* Stars */}
       <div className="text-yellow-500 text-xl ">
-        {"★".repeat(rating)}
+        <img src={rating} />
+        {/* {"★".repeat(rating)} */}
       </div>
 
       {/* Message */}
