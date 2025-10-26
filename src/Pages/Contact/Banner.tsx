@@ -10,13 +10,74 @@ import twitter from '../../assets/twitterX.svg'
 import insta from '../../assets/insta.svg'
 import linkedin from '../../assets/linkedin.svg'
 import youtube from '../../assets/youtube.svg'
+import { useState } from 'react'
+import emailjs from '@emailjs/browser'
 const Banner = () => {
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' })
+  const [isLoading, setIsLoading] = useState(false)
+  const [emailError, setEmailError] = useState('')
+
+  const validateEmail = (email: string) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    return emailRegex.test(email)
+  }
+
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const email = e.target.value
+    setFormData({...formData, email})
+    
+    if (email && !validateEmail(email)) {
+      setEmailError('Please enter a valid email address')
+    } else {
+      setEmailError('')
+    }
+  }
+
+  const isFormValid = () => {
+    return formData.name.trim() && 
+           formData.email.trim() && 
+           formData.message.trim() && 
+           validateEmail(formData.email) && 
+           !emailError
+  }
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    
+    if (!isFormValid()) {
+      return
+    }
+    
+    setIsLoading(true)
+    
+    try {
+      await emailjs.send(
+        'service_7s5zf99',
+        'template_7c21dti',
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+        },
+        '8_4ytZKJBDi0KjM6c'
+      )
+      alert('Message sent successfully!')
+      setFormData({ name: '', email: '', message: '' })
+      setEmailError('')
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    } catch (error) {
+      alert('Failed to send message. Please try again.')
+    } finally {
+      setIsLoading(false)
+    }
+  }
+
   const ContactDetails = [
     {
       icon: envelope,
       header: 'Email',
       text: 'Stay updated and get in touch directly.',
-      email: 'hey@gmail.com'
+      email: 'contact@fortipay.ai'
     },
     {
       icon: Chat,
@@ -65,7 +126,16 @@ const Banner = () => {
             <h4 className='text-[#2A2A2A] font-[Manrope] text-[16px] font-semibold'>{contact.header}</h4>
           </div>
           <p className='text-[#848484] font-[Lato] text-[14px]  font-normal'>{contact.text}</p>
-          <button className='text-[#33B7FF] font-[Lato] text-[10px] font-semibold text-nowrap'>{contact.email}</button>
+          {contact.header === 'Email' ? (
+            <a 
+              href={`mailto:${contact.email}`}
+              className='text-[#33B7FF] font-[Lato] text-[10px] font-semibold text-nowrap hover:underline cursor-pointer'
+            >
+              {contact.email}
+            </a>
+          ) : (
+            <button className='text-[#33B7FF] font-[Lato] text-[10px] font-semibold text-nowrap'>{contact.email}</button>
+          )}
         </div>
       ))}
       <div className='flex flex-wrap gap-[16px]'>
@@ -75,21 +145,53 @@ const Banner = () => {
         </div>
     </div>
     <div className='border rounded-[24px] p-[32px] bg-white'>
-      <form className='flex flex-col gap-[20px] bg-white'>
+      <form onSubmit={handleSubmit} className='flex flex-col gap-[20px] bg-white'>
         <div>
           <label className='block text-[#2A2A2A] font-[Manrope] text-[14px] font-semibold mb-2'>Name</label>
-          <input type='text' className='w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#03377D]' placeholder='Enter your name' />
+          <input 
+            type='text' 
+            value={formData.name}
+            onChange={(e) => setFormData({...formData, name: e.target.value})}
+            className='w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#03377D]' 
+            placeholder='Enter your name' 
+            required 
+          />
         </div>
         <div>
           <label className='block text-[#2A2A2A] font-[Manrope] text-[14px] font-semibold mb-2'>Email</label>
-          <input type='email' className='w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#03377D]' placeholder='Enter your email' />
+          <input 
+            type='email' 
+            value={formData.email}
+            onChange={handleEmailChange}
+            className={`w-full p-3 border rounded-lg focus:outline-none ${
+              emailError ? 'border-red-500 focus:border-red-500' : 'border-gray-300 focus:border-[#03377D]'
+            }`}
+            placeholder='Enter your email' 
+            required 
+          />
+          {emailError && <p className='text-red-500 text-sm mt-1'>{emailError}</p>}
         </div>
         <div>
           <label className='block text-[#2A2A2A] font-[Manrope] text-[14px] font-semibold mb-2'>Message</label>
-          <textarea rows={4} className='w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#03377D] resize-none' placeholder='Enter your message'></textarea>
+          <textarea 
+            rows={4} 
+            value={formData.message}
+            onChange={(e) => setFormData({...formData, message: e.target.value})}
+            className='w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#03377D] resize-none' 
+            placeholder='Enter your message'
+            required
+          ></textarea>
         </div>
-        <button type='submit' className='bg-[#03377D] text-white py-3 px-6 rounded-full font-[Manrope] font-semibold '>
-          Send Message
+        <button 
+          type='submit' 
+          disabled={isLoading || !isFormValid()}
+          className={`py-3 px-6 rounded-full font-[Manrope] font-semibold transition-all ${
+            isFormValid() && !isLoading 
+              ? 'bg-[#03377D] text-white hover:bg-[#024a8a]' 
+              : 'bg-gray-300 text-gray-500 cursor-not-allowed'
+          }`}
+        >
+          {isLoading ? 'Sending...' : 'Send Message'}
         </button>
       </form>
       </div>

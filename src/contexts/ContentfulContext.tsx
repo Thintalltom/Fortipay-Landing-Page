@@ -39,6 +39,7 @@ interface ContentfulData {
   VisionSideJson: any[]
   visionLeftJson: any
   AboutTeamJson: any[]
+  blogPoster: any[]
 }
 
 const ContentfulContext = createContext<ContentfulData | undefined>(undefined)
@@ -83,20 +84,23 @@ export const ContentfulProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     questionSubText: null,
     powerfulJson: [],
     VisionSideJson: [],
-    AboutTeamJson: []
+    AboutTeamJson: [],
+    blogPoster: []
   })
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const [bannerEntries, solutionEntries] = await Promise.all([
+        const [bannerEntries, solutionEntries, blogPost] = await Promise.all([
           client.getEntries({ content_type: 'bannerHolderText' }),
-          client.getEntries({ content_type: 'solutionBanner' })
+          client.getEntries({ content_type: 'solutionBanner' }),
+          client.getEntries({content_type: "blogPost"})
         ])
 
         const bannerFields = bannerEntries?.items?.[0]?.fields
         const solutionFields = solutionEntries?.items?.[0]?.fields
-        // console.log('the banner section', solutionFields)
+        const blogPoster = blogPost?.items
+        //  console.log('the banner section', blogPoster)
         setData({
           solutionFeatureText: toStringOrNull(bannerFields?.solutionFeatureText),
           solutionFeatureSubtext: toStringOrNull(bannerFields?.solutionFeatureSubtext),
@@ -136,6 +140,7 @@ export const ContentfulProvider: React.FC<{ children: React.ReactNode }> = ({ ch
           ) ? solutionFields.
             aboutTeamJson
             : [],
+          blogPoster: Array.isArray(blogPoster) ? blogPoster : [],
           isLoading: false
         })
       } catch (error) {
