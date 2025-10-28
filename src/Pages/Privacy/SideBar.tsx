@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 interface SidebarProps {
   sections: {
     id: string
@@ -6,12 +6,10 @@ interface SidebarProps {
     title: string
   }[]
   onSectionClick?: (id: string) => void
+  activeSection?: string
 }
-export function Sidebar({ sections, onSectionClick }: SidebarProps) {
-  const [activeSection, setActiveSection] = useState<string | null>(null)
-  
+export function Sidebar({ sections, onSectionClick, activeSection }: SidebarProps) {
   const handleClick = (id: string) => {
-    setActiveSection(id)
     if (onSectionClick) {
       onSectionClick(id)
     }
@@ -24,8 +22,8 @@ export function Sidebar({ sections, onSectionClick }: SidebarProps) {
           <li key={section.id}>
             <button
               onClick={() => handleClick(section.id)}
-              className={`text-left hover:text-[#03377D] w-full font-[Lato] font-regular text-[#888888] text-[16px] pl-4 py-2 -ml-4 ${
-                activeSection === section.id ? 'border-l-4 border-[#03377D] text-[#03377D]' : ''
+              className={`text-left hover:text-[#03377D] w-full font-[Lato] font-regular text-[#888888] text-[16px] pl-4 py-2 -ml-4 transition-colors ${
+                activeSection === section.id ? 'border-l-4 border-[#03377D] text-[#03377D] font-semibold' : ''
               }`}
             >
               {section.title}

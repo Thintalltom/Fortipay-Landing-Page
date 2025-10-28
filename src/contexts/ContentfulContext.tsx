@@ -40,6 +40,13 @@ interface ContentfulData {
   visionLeftJson: any
   AboutTeamJson: any[]
   blogPoster: any[]
+  privacyJson: any[]
+  termsJson: any[]
+  privacyText: string | null
+  policyText: string | null
+  policySubText: string | null
+  termsText: string | null
+  termsSubText: string | null
 }
 
 const ContentfulContext = createContext<ContentfulData | undefined>(undefined)
@@ -85,7 +92,14 @@ export const ContentfulProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     powerfulJson: [],
     VisionSideJson: [],
     AboutTeamJson: [],
-    blogPoster: []
+    blogPoster: [],
+    privacyJson: [],
+    termsJson: [],
+    privacyText: null,
+    policyText: null,
+    policySubText: null,
+    termsText: null,
+    termsSubText: null
   })
 
   useEffect(() => {
@@ -100,7 +114,7 @@ export const ContentfulProvider: React.FC<{ children: React.ReactNode }> = ({ ch
         const bannerFields = bannerEntries?.items?.[0]?.fields
         const solutionFields = solutionEntries?.items?.[0]?.fields
         const blogPoster = blogPost?.items
-        //  console.log('the banner section', blogPoster)
+        console.log('the banner fileds', bannerFields)
         setData({
           solutionFeatureText: toStringOrNull(bannerFields?.solutionFeatureText),
           solutionFeatureSubtext: toStringOrNull(bannerFields?.solutionFeatureSubtext),
@@ -123,6 +137,11 @@ export const ContentfulProvider: React.FC<{ children: React.ReactNode }> = ({ ch
           workSubText: toStringOrNull(bannerFields?.workSubText),
           valuePreposition: toStringOrNull(bannerFields?.valuePreposition),
           valuePrepositionSubText: toStringOrNull(bannerFields?.valuePrepositionSubtext),
+          privacyText: toStringOrNull(bannerFields?.privacyText),
+          policySubText: toStringOrNull(bannerFields?.policySubText),
+          policyText: toStringOrNull(bannerFields?.policyText),
+          termsSubText: toStringOrNull(bannerFields?.termSubText),
+          termsText: toStringOrNull(bannerFields?.termsText),
           pricingData: Array.isArray(solutionFields?.pricingData) ? solutionFields.pricingData : [],
           protectData: Array.isArray(solutionFields?.protectData) ? solutionFields.protectData : [],
           homeBlog: Array.isArray(solutionFields?.homeBlog) ? solutionFields.homeBlog : [],
@@ -134,6 +153,8 @@ export const ContentfulProvider: React.FC<{ children: React.ReactNode }> = ({ ch
           rowsJson: Array.isArray(solutionFields?.rowsJson) ? solutionFields.rowsJson : [],
           aboutVisionJson: Array.isArray(solutionFields?.aboutVisionJson) ? solutionFields.aboutVisionJson : [],
           VisionSideJson: Array.isArray(solutionFields?.visionSideJson) ? solutionFields.visionSideJson : [],
+          privacyJson: Array.isArray(solutionFields?.privacyJson) ? solutionFields.privacyJson : [],
+          termsJson: Array.isArray(solutionFields?.termsJson) ? solutionFields.termsJson : [],
           visionLeftJson: solutionFields?.visionleftJson || null,
           AboutTeamJson: Array.isArray(solutionFields?.
             aboutTeamJson

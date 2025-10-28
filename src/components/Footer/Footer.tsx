@@ -2,7 +2,7 @@
 /* eslint-disable no-irregular-whitespace */
 import FortiPay from '../../assets/FORTIPAYUNDER.svg'
 import FooterImg from '../../assets/FooterFortpay.png' 
-import FortyLogo from '../../assets/FortiPay.svg'
+// import FortyLogo from '../../assets/FortiPay.svg'
 import { client } from '../../Contentful'
 import { useState, useEffect } from 'react'
 const Footer = () => {
@@ -35,8 +35,8 @@ const Footer = () => {
     <footer className='relative z-10 bg-[#03377D] w-full mt-auto min-h-[200px] flex flex-col items-center justify-center'>
         <img src={FooterImg} className="absolute inset-0 w-full h-full object-cover" />
         <div className='p-[80px] text-white flex justify-between  w-full'>
-          <div className='flex flex-col gap-[10px]'>
-        <img src={FortyLogo} alt='fortipay logo' className='w-[145px] h-[30px]' />
+          <div className='flex flex-col '>
+         <img src={"https://images.ctfassets.net/t38lsvt2xzqb/4KgJmfTc9gAmfDkZKj05os/a8f178ec2d18feaa7cb4582677048353/CorvynAI-removebg-preview.png"} className='w-[135px] ' />
         <div className='w-[410px] text-[14px]'>
           <p>Shark illustration barn seems parking hits tiger globalize forward who's. Cross-pollination optimize obviously due deploy day stronger. Practices looking looking caught supervisor principles eat. Needle field including after where door.</p>
         </div>

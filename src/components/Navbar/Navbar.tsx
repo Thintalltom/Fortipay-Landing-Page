@@ -1,5 +1,5 @@
 
-import FortPay from '../../assets/BlueForti.svg'
+
 import { Link, useLocation } from 'react-router-dom'
 
 const Navbar = () => {
@@ -10,7 +10,7 @@ const Navbar = () => {
     return (
         <nav className="relative z-10 p-4 flex justify-center items-center">
             <div className='flex gap-[40px] md:gap-[60px] lg:gap-[80px] w-full max-w-[600px] md:max-w-[800px] lg:max-w-[1000px] px-[12px] md:px-[14px] lg:px-[16px] py-[20px] md:py-[22px] lg:py-[24px] rounded-[50px] justify-center items-center h-[64px] md:h-[68px] lg:h-[72px] bg-white shadow-[0_4px_20px_rgba(0,0,0,0.1)]'>
-                <img src={FortPay} />
+                <img src={"https://images.ctfassets.net/t38lsvt2xzqb/4KgJmfTc9gAmfDkZKj05os/a8f178ec2d18feaa7cb4582677048353/CorvynAI-removebg-preview.png"} className='w-[135px] ' />
                 <div className='flex gap-[40px] font-[Lato] text-[14px]'>
                     <Link to='/' className={isActive('/') ? 'text-[#03377D]' : 'text-[#848484]'}>Home</Link>
                     <Link to='/solution' className={isActive('/solution') ? 'text-[#03377D]' : 'text-[#848484]'}>Solution</Link>
