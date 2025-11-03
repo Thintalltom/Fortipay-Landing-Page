@@ -5,17 +5,14 @@ import envelope from '../../assets/EnvelopeOpen.svg'
 import Chat from '../../assets/ChatTeardrop.svg'
 import Phone from '../../assets/Phone (1).svg'
 import Location from '../../assets/Vector (2).svg'
-import facebook from '../../assets/facebook.svg'
-import twitter from '../../assets/twitterX.svg'
-import insta from '../../assets/insta.svg'
-import linkedin from '../../assets/linkedin.svg'
-import youtube from '../../assets/youtube.svg'
 import { useState } from 'react'
 import emailjs from '@emailjs/browser'
+import { useContentful } from '../../contexts/ContentfulContext'
 const Banner = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' })
   const [isLoading, setIsLoading] = useState(false)
   const [emailError, setEmailError] = useState('')
+  const { footerLinks } = useContentful()
 
   const validateEmail = (email: string) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
@@ -98,9 +95,7 @@ const Banner = () => {
       email: '+1 (455) 555-0198'
     }
   ]
-  const icons = [
-      facebook, twitter, insta, linkedin, youtube
-  ]
+
   return (
     <section className="relative w-full min-h-screen bg-white flex flex-col mb-[100px]">
       <img src={AboutSVG} className="absolute inset-0 w-full h-full object-cover" />
@@ -139,8 +134,10 @@ const Banner = () => {
         </div>
       ))}
       <div className='flex flex-wrap gap-[16px]'>
-        {icons.map((icon, index) => (
-          <img key={index} src={icon} className='w-[16px] h-[16px]' />
+        {footerLinks.map((icon, index) => (
+          <a href={icon.link} key={index} target='_blank' className=''>
+            <img src={icon.icon} className='w-[16px] h-[16px]' />
+          </a>
         ))}
         </div>
     </div>

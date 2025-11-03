@@ -47,6 +47,7 @@ interface ContentfulData {
   policySubText: string | null
   termsText: string | null
   termsSubText: string | null
+  footerLinks: any[]
 }
 
 const ContentfulContext = createContext<ContentfulData | undefined>(undefined)
@@ -99,7 +100,8 @@ export const ContentfulProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     policyText: null,
     policySubText: null,
     termsText: null,
-    termsSubText: null
+    termsSubText: null,
+    footerLinks: []
   })
 
   useEffect(() => {
@@ -114,7 +116,7 @@ export const ContentfulProvider: React.FC<{ children: React.ReactNode }> = ({ ch
         const bannerFields = bannerEntries?.items?.[0]?.fields
         const solutionFields = solutionEntries?.items?.[0]?.fields
         const blogPoster = blogPost?.items
-        console.log('the banner fileds', bannerFields)
+        console.log('the banner fileds', solutionFields)
         setData({
           solutionFeatureText: toStringOrNull(bannerFields?.solutionFeatureText),
           solutionFeatureSubtext: toStringOrNull(bannerFields?.solutionFeatureSubtext),
@@ -143,6 +145,7 @@ export const ContentfulProvider: React.FC<{ children: React.ReactNode }> = ({ ch
           termsSubText: toStringOrNull(bannerFields?.termSubText),
           termsText: toStringOrNull(bannerFields?.termsText),
           pricingData: Array.isArray(solutionFields?.pricingData) ? solutionFields.pricingData : [],
+           footerLinks: Array.isArray(solutionFields?.footerLinks) ? solutionFields.footerLinks : [],
           protectData: Array.isArray(solutionFields?.protectData) ? solutionFields.protectData : [],
           homeBlog: Array.isArray(solutionFields?.homeBlog) ? solutionFields.homeBlog : [],
           footerData: Array.isArray(solutionFields?.footerData) ? solutionFields.footerData : [],

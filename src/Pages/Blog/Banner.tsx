@@ -9,7 +9,7 @@ const Banner = () => {
 
   const handleLoadMore = () => {
     // Optional: Add any additional logic when load more is clicked
-    console.log('Load more clicked')
+    // console.log('Load more clicked')
   }
 
   return (

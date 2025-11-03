@@ -1,47 +1,43 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable no-irregular-whitespace */
 import FortiPay from '../../assets/FORTIPAYUNDER.svg'
-import FooterImg from '../../assets/FooterFortpay.png' 
+import FooterImg from '../../assets/FooterFortpay.png'
 // import FortyLogo from '../../assets/FortiPay.svg'
 import { client } from '../../Contentful'
 import { useState, useEffect } from 'react'
 const Footer = () => {
-     const [footerData, setFooterData] = useState<any[]>([])
-         const [isLoading, setIsLoading] = useState(true)
-        
-            useEffect(() => {
-                const getValuePreposition = async () => {
-                    try {
-                        const entries = await client.getEntries({
-                            content_type:  'solutionBanner',
-                        })
-                  
-                 
-                        const bannertext = entries?.items?.[0]?.fields?.footerData
-    
-                        if (Array.isArray(bannertext)) {
-                            setFooterData(bannertext)
-                        }
-                      
-                    } catch (error) {
-                        console.log(error)
-                    } finally {
-                        setIsLoading(false)
-                    }
-                }
-                getValuePreposition()
-            }, [])
+  const [footerData, setFooterData] = useState<any[]>([])
+  const [isLoading, setIsLoading] = useState(true)
+
+  useEffect(() => {
+    const getValuePreposition = async () => {
+      try {
+        const entries = await client.getEntries({
+          content_type: 'solutionBanner',
+        })
+        const bannertext = entries?.items?.[0]?.fields?.footerData
+        if (Array.isArray(bannertext)) {
+          setFooterData(bannertext)
+        }
+      } catch (error) {
+        console.log(error)
+      } finally {
+        setIsLoading(false)
+      }
+    }
+    getValuePreposition()
+  }, [])
   return (
     <footer className='relative z-10 bg-[#03377D] w-full mt-auto min-h-[200px] flex flex-col items-center justify-center'>
-        <img src={FooterImg} className="absolute inset-0 w-full h-full object-cover" />
-        <div className='p-[80px] text-white flex justify-between  w-full'>
-          <div className='flex flex-col '>
-         <img src={"https://images.ctfassets.net/t38lsvt2xzqb/4KgJmfTc9gAmfDkZKj05os/a8f178ec2d18feaa7cb4582677048353/CorvynAI-removebg-preview.png"} className='w-[135px] ' />
-        <div className='w-[410px] text-[14px]'>
-          <p>Shark illustration barn seems parking hits tiger globalize forward who's. Cross-pollination optimize obviously due deploy day stronger. Practices looking looking caught supervisor principles eat. Needle field including after where door.</p>
-        </div>
+      <img src={FooterImg} className="absolute inset-0 w-full h-full object-cover" />
+      <div className='p-[80px] text-white flex justify-between  w-full'>
+        <div className='flex flex-col '>
+          <img src={"https://images.ctfassets.net/t38lsvt2xzqb/4KgJmfTc9gAmfDkZKj05os/a8f178ec2d18feaa7cb4582677048353/CorvynAI-removebg-preview.png"} className='w-[200px]  h-fit' />
+          <div className='w-[410px]  h-fit text-[14px] '>
+            <p>Shark illustration barn seems parking hits tiger globalize forward who's. Cross-pollination optimize obviously due deploy day stronger. Practices looking looking caught supervisor principles eat. Needle field including after where door.</p>
           </div>
-           <div className='grid grid-cols-4 gap-[40px]'>
+        </div>
+        <div className='grid grid-cols-4 gap-[40px]'>
           {isLoading ? (
             Array.from({ length: 4 }).map((_, index) => (
               <div key={index} className='flex flex-col gap-[10px] animate-pulse'>
@@ -65,17 +61,17 @@ const Footer = () => {
               </div>
             ))
           )}
-          </div>
         </div>
-        {/* <img src={FortiPay} alt='fotipay image' /> */}
-        <img src={FortiPay} alt='fortipay under logo' />
-        <div className='p-[80px] w-full'>
+      </div>
+      {/* <img src={FortiPay} alt='fotipay image' /> */}
+      <img src={FortiPay} alt='fortipay under logo' />
+      <div className='p-[80px] w-full'>
 
         <hr className='border-[0.5px] padding-b-[20px] w-full' />
         <div className='flex gap-[10px] text-white'>
-      <p>© 2099 Palm UI</p> <p>.</p> <p>Terms</p><p>.</p> <p>Privacy</p>
+          <p>© 2099 Palm UI</p> <p>.</p> <p>Terms</p><p>.</p> <p>Privacy</p>
         </div>
-        </div>
+      </div>
     </footer>
   )
 }
