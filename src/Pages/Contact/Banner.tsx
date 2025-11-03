@@ -49,8 +49,8 @@ const Banner = () => {
     
     try {
       await emailjs.send(
-        'service_7s5zf99',
-        'template_7c21dti',
+        'service_8mgjapm',
+        'template_mn053o4',
         {
           from_name: formData.name,
           from_email: formData.email,
