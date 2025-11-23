@@ -8,37 +8,37 @@ export const valueProposition = [
     icon: cardIcon,
     header: "Real-Time AI Detection",
     title:
-      "FortiPay’s AI engine analyzes every transaction as it happens, using device, network, and behavioral signals to spot suspicious activity before money moves. Fraud is blocked in milliseconds, not after the damage is done.",
+      "Corvyn AI’s AI engine analyzes every transaction as it happens, using device, network, and behavioral signals to spot suspicious activity before money moves. Fraud is blocked in milliseconds, not after the damage is done.",
   },
   {
     icon: cardIcon,
     header: "Chargeback Reduction",
     title:
-      "By catching fraudulent transactions early and providing verifiable risk scores, FortiPay helps merchants and banks avoid costly chargebacks and dispute fees, protecting revenue and customer trust.",
+      "By catching fraudulent transactions early and providing verifiable risk scores, Corvyn AI helps merchants and banks avoid costly chargebacks and dispute fees, protecting revenue and customer trust.",
   },
   {
     icon: cardIcon,
     header: "Seamless Integration",
     title:
-      "Lightweight SDKs and REST APIs let you plug FortiPay into web or mobile apps with minimal code. No complex infrastructure, just drop it in and start scoring transactions.",
+      "Lightweight SDKs and REST APIs let you plug Corvyn AI into web or mobile apps with minimal code. No complex infrastructure, just drop it in and start scoring transactions.",
   },
   {
     icon: cardIcon,
     header: "Built for Growth",
     title:
-      "FortiPay’s architecture scales with your business, supporting high transaction volumes, multi-channel data, and evolving fraud patterns without slowing performance.",
+      "Corvyn AI’s architecture scales with your business, supporting high transaction volumes, multi-channel data, and evolving fraud patterns without slowing performance.",
   },
 ];
 
 export const howItWorks = [
   {
-    header: "Connect FortiPay to Your Payment System",
+    header: "Connect Corvyn AI to Your Payment System",
     text: "Integrate quickly with our SDK or REST API. No heavy infrastructure, just drop in a few lines of code and start sending transaction data securely.",
     image: WorkImg,
   },
   {
     header: "Real-Time AI Transaction Monitoring",
-    text: "FortiPay’s AI engine analyzes every payment, login, and transfer in milliseconds, combining device signals, user behavior, and historical patterns to spot suspicious activity.",
+    text: "Corvyn AI’s AI engine analyzes every payment, login, and transfer in milliseconds, combining device signals, user behavior, and historical patterns to spot suspicious activity.",
     image: WorkImg,
   },
   {
@@ -201,28 +201,28 @@ export const footerData = [
     ]
   }
 ]
-import fan from '../assets/fan.svg'
+// import fan from '../assets/fan.svg'
 
 export const SectionCard = [
   {
     icon: "https://images.ctfassets.net/t38lsvt2xzqb/3caLNsQfLZj1orEeu7VZuB/b48a86dae99036fbf2b370acb602788b/FAN.svg",
     header: 'AI Risk Engine',
-    text: 'Analyze every transaction in milliseconds with adaptive AI that flags suspicious behavior before it impacts your revenue. FortiPay’s learning engine evolves with emerging fraud tactics to keep your business secure.'
+    text: 'Analyze every transaction in milliseconds with adaptive AI that flags suspicious behavior before it impacts your revenue. Corvyn AI’s learning engine evolves with emerging fraud tactics to keep your business secure.'
   },
    {
     icon: "https://images.ctfassets.net/t38lsvt2xzqb/3caLNsQfLZj1orEeu7VZuB/b48a86dae99036fbf2b370acb602788b/FAN.svg",
     header: 'Chargeback Protection',
-    text: 'Reduce costly disputes and losses with proactive monitoring and automated evidence collection for chargebacks. FortiPay helps you fight fraud effectively while protecting profits and customer trust.'
+    text: 'Reduce costly disputes and losses with proactive monitoring and automated evidence collection for chargebacks. Corvyn AI helps you fight fraud effectively while protecting profits and customer trust.'
   },
    {
     icon: "https://images.ctfassets.net/t38lsvt2xzqb/3caLNsQfLZj1orEeu7VZuB/b48a86dae99036fbf2b370acb602788b/FAN.svg",
     header: 'Account Takeover Defense',
-    text: 'Detect unusual behavior like location or device changes using behavioral biometrics to prevent unauthorized access. FortiPay keeps accounts safe without adding friction to the customer experience.'
+    text: 'Detect unusual behavior like location or device changes using behavioral biometrics to prevent unauthorized access. Corvyn AI keeps accounts safe without adding friction to the customer experience.'
   },
    {
     icon: "https://images.ctfassets.net/t38lsvt2xzqb/3caLNsQfLZj1orEeu7VZuB/b48a86dae99036fbf2b370acb602788b/FAN.svg",
     header: 'Easy API Integration',
-    text: 'Connect FortiPay to your systems with lightweight APIs and SDKs for fast, disruption-free integration. Our plug-and-play approach ensures protection without slowing your business operations.'
+    text: 'Connect Corvyn AI to your systems with lightweight APIs and SDKs for fast, disruption-free integration. Our plug-and-play approach ensures protection without slowing your business operations.'
   },
 ]
 

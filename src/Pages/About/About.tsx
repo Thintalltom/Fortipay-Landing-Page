@@ -8,8 +8,8 @@ const About = () => {
   return (
     <div>
       <SEO
-        title="About FortiPay - Our Mission & Team"
-        description="Learn about FortiPay's mission to provide secure payment solutions and meet our expert team."
+        title="About Corvyn AI - Our Mission & Team"
+        description="Learn about Corvyn AI's mission to provide secure payment solutions and meet our expert team."
         url="replace with about url"
       />
       <Banner />

@@ -9,7 +9,7 @@ const Industries = () => {
             <div className="flex justify-center items-center flex-col ">
                 <TagButton>FEATURES OVERVIEW</TagButton>
                 <p className='text-[#03377D] text-[38px] font-[Manrope] font-medium'>Industries We Protect</p>
-                <p className="text-[#848484] font-[Lato] ">FortiPay delivers enterprise-grade fraud protection in tools that are simple, fast, and built for growing businesses.</p>
+                <p className="text-[#848484] font-[Lato] ">Corvyn AI delivers enterprise-grade fraud protection in tools that are simple, fast, and built for growing businesses.</p>
             </div>
             <div className=' grid grid-cols-2 mt-[50px] gap-[10px]'>
                 <div className="rounded-[12px] bg-[#EBF8FF] flex flex-col p-[32px] gap-[12px]">

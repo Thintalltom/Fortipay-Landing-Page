@@ -6,7 +6,7 @@ const Blog = () => {
   return (
     <div>
       <SEO
-        title="FortiPay Blog - Payment Security Insights"
+        title="Corvyn AI Blog - Payment Security Insights"
         description="Stay updated with the latest insights on payment security, fraud prevention, and fintech trends."
         url="replace with blog url"
       />

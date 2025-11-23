@@ -13,8 +13,8 @@ const Home = () => {
     return (
         <div>
              <SEO
-        title="FortiPay - Fast Payments for Business"
-        description="Accept and send payments with FortiPay across Africa securely."
+        title="Corvyn AI - Fast Payments for Business"
+        description="Accept and send payments with Corvyn AI across Africa securely."
         url=" replace with url"
       />
             <Banner />

@@ -6,8 +6,8 @@ const Term = () => {
   return (
     <div>
       <SEO
-        title="Terms of Use - FortiPay"
-        description="Review FortiPay's terms of use and service agreements for our payment security platform."
+        title="Terms of Use - Corvyn AI"
+        description="Review Corvyn AI's terms of use and service agreements for our payment security platform."
         url="replace with terms url"
       />
       <Banner />

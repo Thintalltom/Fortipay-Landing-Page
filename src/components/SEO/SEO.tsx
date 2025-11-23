@@ -9,9 +9,9 @@ interface SEOProps {
 }
 
 export default function SEO({
-  title = "FortiPay - Smarter Fraud Detection for Safer Payments",
+  title = "Corvyn AI - Smarter Fraud Detection for Safer Payments",
   description = "AI-powered fraud and chargeback prevention platform that protects revenue and keeps every payment secure.",
-  keywords = "payments, fintech, fortipay, online payments, africa payments, secure payments, FortiPay, FORTIPAY, fortiPay",
+  keywords = "payments, fintech, Corvyn AI online payments, africa payments, secure payments, Corvyn AI, Corvyn AI, Corvyn AI",
   image = "/vite.svg",
   url = "replace with url"
 }: SEOProps) {

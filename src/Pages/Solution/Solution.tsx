@@ -10,8 +10,8 @@ const Solution = () => {
   return (
     <div>
       <SEO
-        title="FortiPay Solutions - Fraud Protection & Payment Security"
-        description="Discover FortiPay's comprehensive fraud detection and payment security solutions for businesses."
+        title="Corvyn AI Solutions - Fraud Protection & Payment Security"
+        description="Discover Corvyn AI's comprehensive fraud detection and payment security solutions for businesses."
         url="replace with solution url"
       />
       <Banner />

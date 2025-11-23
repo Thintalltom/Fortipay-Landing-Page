@@ -5,8 +5,8 @@ const Contact = () => {
   return (
     <div>
       <SEO
-        title="Contact FortiPay - Get in Touch"
-        description="Contact FortiPay for support, partnerships, or inquiries about our payment security solutions."
+        title="Contact Corvyn AI - Get in Touch"
+        description="Contact Corvyn AI for support, partnerships, or inquiries about our payment security solutions."
         url="replace with contact url"
       />
       <Banner />

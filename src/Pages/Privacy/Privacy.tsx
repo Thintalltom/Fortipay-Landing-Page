@@ -6,8 +6,8 @@ const Privacy = () => {
   return (
     <div>
       <SEO
-        title="Privacy Policy - FortiPay"
-        description="Read FortiPay's privacy policy to understand how we protect and handle your data."
+        title="Privacy Policy - Corvyn AI"
+        description="Read Corvyn AI's privacy policy to understand how we protect and handle your data."
         url="replace with privacy url"
       />
       <Banner />

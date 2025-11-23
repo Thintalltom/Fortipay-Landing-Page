@@ -74,7 +74,7 @@ const Banner = () => {
       icon: envelope,
       header: 'Email',
       text: 'Stay updated and get in touch directly.',
-      email: 'contact@fortipay.ai'
+      email: 'contact@Corvyn AI.ai'
     },
     {
       icon: Chat,
