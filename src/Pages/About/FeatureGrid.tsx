@@ -1,6 +1,6 @@
 import { useContentful } from '../../contexts/ContentfulContext'
 const FeatureGrid = () => {
-    const { aboutVisionJson, VisionSideJson, visionLeftJson, isLoading } = useContentful()
+    const { aboutVisionJson, VisionSideJson, visionLeftJson} = useContentful()
   
 
   

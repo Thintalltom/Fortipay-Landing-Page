@@ -4,7 +4,7 @@ import Privacybg from '../../assets/privacybg.png'
 import TagButton from '../../components/TagButton'
 import { useContentful } from '../../contexts/ContentfulContext'
 const Banner = () => {
-     const {  isLoading, policySubText, privacyText, policyText } = useContentful()
+     const {   policySubText, privacyText, policyText } = useContentful()
   return (
     <section className="relative w-full min-h-screen bg-white flex flex-col ">
               <img src={AboutSVG} className="absolute inset-0 w-full h-full object-cover" />

@@ -48,6 +48,7 @@ interface ContentfulData {
   termsText: string | null
   termsSubText: string | null
   footerLinks: any[]
+  aboutLinks: any[]
 }
 
 const ContentfulContext = createContext<ContentfulData | undefined>(undefined)
@@ -101,7 +102,8 @@ export const ContentfulProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     policySubText: null,
     termsText: null,
     termsSubText: null,
-    footerLinks: []
+    footerLinks: [],
+    aboutLinks: []
   })
 
   useEffect(() => {
@@ -165,6 +167,7 @@ export const ContentfulProvider: React.FC<{ children: React.ReactNode }> = ({ ch
             aboutTeamJson
             : [],
           blogPoster: Array.isArray(blogPoster) ? blogPoster : [],
+           aboutLinks: Array.isArray(solutionFields?.aboutJson) ? solutionFields.aboutJson : [],
           isLoading: false
         })
       } catch (error) {

@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import { MinusIcon, PlusIcon } from 'lucide-react'
 interface AccordionItemProps {
   title: string

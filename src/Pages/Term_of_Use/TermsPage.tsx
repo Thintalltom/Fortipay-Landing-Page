@@ -3,7 +3,7 @@ import { TermsSection } from '../Privacy/TermSection'
 import { useContentful } from '../../contexts/ContentfulContext'
 import {useEffect, useState} from 'react'
 export function TermsPage() {
-    const { termsJson, isLoading } = useContentful()
+    const { termsJson,  } = useContentful()
     const [activeSection, setActiveSection] = useState<string>('')
   useEffect(() => {
     const handleScroll = () => {

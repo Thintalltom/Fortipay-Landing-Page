@@ -5,7 +5,10 @@ import TagButton from '../../components/TagButton'
 import BlogTabs from '../../components/BlogTabs/BlogTabs'
 
 const Banner = () => {
-  const [showLoadMore, setShowLoadMore] = useState(true)
+  const [showLoadMore, 
+    // setShowLoadMore
+
+  ] = useState(true)
 
   const handleLoadMore = () => {
     // Optional: Add any additional logic when load more is clicked

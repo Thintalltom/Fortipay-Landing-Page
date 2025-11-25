@@ -1,4 +1,4 @@
-import React from 'react'
+
 interface SidebarProps {
   sections: {
     id: string

@@ -1,4 +1,4 @@
-import React from 'react'
+
 interface TermsSectionProps {
   id: string
   number: number

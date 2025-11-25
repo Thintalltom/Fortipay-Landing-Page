@@ -4,7 +4,7 @@ import { TermsSection } from './TermSection'
 import { useContentful } from '../../contexts/ContentfulContext'
 
 export function PrivacyPage() {
-  const { privacyJson, isLoading } = useContentful()
+  const { privacyJson } = useContentful()
   const [activeSection, setActiveSection] = useState<string>('')
 
   useEffect(() => {
