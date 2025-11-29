@@ -55,7 +55,7 @@ export const HowItWorks = () => {
                             <p className="text-[#03377D] text-[24px] font-medium font-[Manrope] mb-4 ">{work.header}</p>
                             <p className='text-[16px] text-[#848484] font-[Lato] font-normal mb-8'>{work.text}</p>
                         </div>
-                        <img src={work.image} alt=" work image " className="mt-auto" />
+                        <img src={work.image} alt=" work image " className="mt-auto h-64 w-full object-cover" />
                     </div>
                 ))
             )}

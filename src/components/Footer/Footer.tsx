@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable no-irregular-whitespace */
-import FortiPay from '../../assets/FORTIPAYUNDER.svg'
+// import FortiPay from '../../assets/FORTIPAYUNDER.svg'
 import FooterImg from '../../assets/FooterFortpay.png'
 // import FortyLogo from '../../assets/FortiPay.svg'
 import { client } from '../../Contentful'
@@ -64,12 +64,12 @@ const Footer = () => {
         </div>
       </div>
       {/* <img src={FortiPay} alt='fotipay image' /> */}
-      <img src={FortiPay} alt='fortipay under logo' />
+      {/* <img src={FortiPay} alt='fortipay under logo' /> */}
       <div className='p-[80px] w-full'>
 
         <hr className='border-[0.5px] padding-b-[20px] w-full' />
         <div className='flex gap-[10px] text-white'>
-          <p>© 2099 Palm UI</p> <p>.</p> <p>Terms</p><p>.</p> <p>Privacy</p>
+          <p>© 2025 </p> <p>.</p> <p>Terms</p><p>.</p> <p>Privacy</p>
         </div>
       </div>
     </footer>
