@@ -20,7 +20,7 @@ const Banner = () => {
             </div>
           ) : (
             <>
-              <p className='font-[Manrope] text-[56px] text-[#03377D] w-[700px] max-w-[800px] min-w-[500px] text-center'>{bannerText}</p>
+              <p className='font-[Manrope] text-[56px] text-[#0259cc] w-[700px] max-w-[800px] min-w-[500px] text-center'>{bannerText}</p>
               <p className='text-[#848484] font-semibold font-[Lato] text-center w-[550px] max-w-[600px] min-w-[400px]'>{bannerSubText}</p>
             </>
           )}

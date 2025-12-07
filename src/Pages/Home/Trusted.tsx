@@ -26,7 +26,7 @@ const Trusted = () => {
                   getValuePreposition()
               }, [])
   return (
-    <div className="relative w-full h-[268px] bg-gradient-to-b from-[#0564E3] to-[#03377D] px-[64px] py-[80px] mb-[40px]">
+    <div className="relative w-full h-[268px] bg-gradient-to-b from-[#0564E3] to-[#0259cc] px-[64px] py-[80px] mb-[40px]">
                 <img src={FooterImg} className="absolute inset-0 w-full h-full object-cover mix-blend-overlay" />
                 <div className="relative z-10  text-white flex justify-between">
                     <div className='flex flex-col '>

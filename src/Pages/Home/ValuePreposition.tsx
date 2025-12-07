@@ -32,7 +32,7 @@ const ValuePreposition = () => {
   return (
     <div className="px-[64px] py-[80px] ">
         <TagButton className="mb-[10px]">VALUE PREPOSITION</TagButton>
-        <p className="text-[38px] text-[#03377D] font-[Manrope] font-medium">{valuePreposition}</p>
+        <p className="text-[38px] text-[#0259cc] font-[Manrope] font-medium">{valuePreposition}</p>
         <p className="font-[Lato] text-[#848484] mb-[60px]">{valuePrepositionSubText}</p>
         <div className="flex justify-between items-start">
             <div className="grid grid-cols-2 gap-[20px] flex-1">
@@ -50,7 +50,7 @@ const ValuePreposition = () => {
                     valuePrepositions.map((item, index) => (
                         <div key={index} className="">
                             <img src={item.icon} alt="" className="w-[64px] h-[64px]" />
-                            <h5 className="font-[Manrope] text-[#03377D] text-[20px] w-[250px] mt-[16px]">{item.header}</h5>
+                            <h5 className="font-[Manrope] text-[#0259cc] text-[20px] w-[250px] mt-[16px]">{item.header}</h5>
                             <p className="w-[280px] font-[Lato] text-[16px] text-light text-[#848484]">{item.title}</p>
                         </div>
                     ))

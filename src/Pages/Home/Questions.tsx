@@ -10,8 +10,8 @@ const Questions = () => {
        <div className='flex justify-between items-start  gap-8'>
         <div className='flex-1 '>
               <TagButton>SECTION TITLE</TagButton>
-              <p className='font-[Manrope] text-[38px] font-medium text-[#03377D]'>{questionText}</p>
-              {/* <p className='font-[Manrope] text-[38px] font-medium text-[#03377D]'>Answered.</p> */}
+              <p className='font-[Manrope] text-[38px] font-medium text-[#0259cc]'>{questionText}</p>
+              {/* <p className='font-[Manrope] text-[38px] font-medium text-[#0259cc]'>Answered.</p> */}
               <p className='text-[#848484] font-[Lato] text-[16px]'>{questionSubText}</p>
               <img src={QuestionsIcon} alt="" />
         </div>
@@ -23,7 +23,7 @@ const Questions = () => {
             <p className='font-[Manrope] font-medium text-[#2A2A2A] text-[20px]'>Still have a question in mind?</p>
             <p className='text-[#848484] font-[Lato] font-normal text-[16px]'>Contact us if you have any other questions.</p>
             </div>
-            <button className='bg-[#03377D] text-white px-[16px] py-[8px] rounded-[40px] text-[16px] h-[40px] font-[Lato]'>Contact us</button>
+            <button className='bg-[#0259cc] text-white px-[16px] py-[8px] rounded-[40px] text-[16px] h-[40px] font-[Lato]'>Contact us</button>
            </div>
         </div>
     </div>

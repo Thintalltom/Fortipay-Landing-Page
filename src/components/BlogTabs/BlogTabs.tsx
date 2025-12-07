@@ -102,7 +102,7 @@ const BlogTabs = ({ onLoadMore, showLoadMore }: BlogTabsProps) => {
               />
             </div>
             <div className='flex flex-col gap-3 p-6 flex-grow'>
-              <h3 className='font-[Manrope] font-medium text-[#03377D] text-[18px] leading-tight line-clamp-2'>
+              <h3 className='font-[Manrope] font-medium text-[#0259cc] text-[18px] leading-tight line-clamp-2'>
                 {post.fields.title}
               </h3>
               <p className='font-[Lato] font-normal text-[#848484] text-[14px] leading-relaxed line-clamp-3'>
@@ -128,7 +128,7 @@ const BlogTabs = ({ onLoadMore, showLoadMore }: BlogTabsProps) => {
         <div className='flex justify-center items-center mt-8'>
           <button 
             onClick={handleLoadMore}
-            className='px-[20px] py-[8px] bg-[#EBF8FF] text-[Lato] text-[#03377D] font-semibold rounded-full hover:bg-[#D1F2FF] transition-colors'
+            className='px-[20px] py-[8px] bg-[#EBF8FF] text-[Lato] text-[#0259cc] font-semibold rounded-full hover:bg-[#D1F2FF] transition-colors'
           >
             Load more
           </button>

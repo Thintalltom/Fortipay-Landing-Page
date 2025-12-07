@@ -16,7 +16,7 @@ const FeatureGrid = () => {
                 <p className="font-[Manrope] text-[24px] text-medium">{visionLeftJson?.title}</p>
                 <p className="w-[326px] font-[Lato] text-[#7C7C7C] font-regular">{visionLeftJson?.description}</p>
               </div>
-              <button className="bg-[#03377D] w-[120px] h-[44px] rounded-full mb-[20px] text-white">Get started</button>
+              <button className="bg-[#0259cc] w-[120px] h-[44px] rounded-full mb-[20px] text-white">Get started</button>
             </div>
           </div>
           <div className=" bg-[#D9D9D9] rounded-tr-[20px] rounded-br-[20px]">
@@ -27,7 +27,7 @@ const FeatureGrid = () => {
             <div key={index} className="bg-[#EBF8FF] rounded-[20px] p-[32px] flex flex-col gap-[41px]">
               <img src={feature.icon} alt='device' className="w-[45px] h-[45px]" />
               <div className="flex flex-col gap-[10px]">
-                <h3 className="text-[#03377D] text-[24px] font-[Manrope] font-medium text-nowrap">{feature.title}</h3>
+                <h3 className="text-[#0259cc] text-[24px] font-[Manrope] font-medium text-nowrap">{feature.title}</h3>
                 <p className="text-[#7C7C7C] font-[Lato] text-[16px] leading-6">{feature.description}</p>
               </div>
             </div>
@@ -39,7 +39,7 @@ const FeatureGrid = () => {
           <div key={index} className="bg-[#EBF8FF] p-[32px] rounded-[20px] h-[319px] flex flex-col justify-between">
             <img src={feature.icon} alt='device' className="w-[45px] h-[45px]" />
             <div className="flex flex-col gap-[10px]">
-              <h3 className="text-[#03377D] text-[24px] font-[Manrope] font-medium text-nowrap">{feature.title}</h3>
+              <h3 className="text-[#0259cc] text-[24px] font-[Manrope] font-medium text-nowrap">{feature.title}</h3>
               <p className="text-[#7C7C7C] font-[Lato] text-[16px] leading-6">{feature.description}</p>
             </div>
           </div>

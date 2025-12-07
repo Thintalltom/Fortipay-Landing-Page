@@ -34,7 +34,7 @@ const Pricing = () => {
         <div className="px-[64px] py-[80px] ">
             <div className="flex justify-center flex-col gap-[20px] items-center">
                 <TagButton>SECTION TITLE</TagButton>
-                <p className="text-[38px] text-[#03377D] font-[Manrope] font-medium">{pricingText}</p>
+                <p className="text-[38px] text-[#0259cc] font-[Manrope] font-medium">{pricingText}</p>
                 <p className="font-[Lato] text-[#848484] mb-[80px] font-normal">{pricingSubText}</p>
             </div>
             <div className='flex gap-[24px] items-center justify-center'>
@@ -72,7 +72,7 @@ const Pricing = () => {
                                     </div>
                                     <h3 className='mb-[20px] relative z-20 text-[#3B3B3B] text-[56px] font-bold font-[Manrope]'>{item.price} <span className='font-semibold font-[Lato] text-[16px] text-[#ABABAB]'>/per month</span></h3>
                                     <p className='mb-[20px] relative z-20 text-[#5E5E5E] text-[16px] font-[Lato]'>{item.features}</p>
-                                    <button className='bg-[#F5F5F5] group-hover:bg-[#03377D] group-hover:text-white rounded-[64px] text-[Lato] text-[#3B3B3B] py-[10px] w-full max-w-[280px] px-[20px] transition-all duration-300 relative z-20 font-semibold mx-auto'>Get Started</button>
+                                    <button className='bg-[#F5F5F5] group-hover:bg-[#0259cc] group-hover:text-white rounded-[64px] text-[Lato] text-[#3B3B3B] py-[10px] w-full max-w-[280px] px-[20px] transition-all duration-300 relative z-20 font-semibold mx-auto'>Get Started</button>
                                 </div>
                                 <div className='p-[24px]'>
                                     <p className='text-[#3B3B3B] font-[Manrope] font-medium'>Features</p>

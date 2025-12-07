@@ -28,7 +28,7 @@ const Footer = () => {
     getValuePreposition()
   }, [])
   return (
-    <footer className='relative z-10 bg-[#03377D] w-full mt-auto min-h-[200px] flex flex-col items-center justify-center'>
+    <footer className='relative z-10 bg-[#0259cc] w-full mt-auto min-h-[200px] flex flex-col items-center justify-center'>
       <img src={FooterImg} className="absolute inset-0 w-full h-full object-cover" />
       <div className='px-[80px] pt-[40px] pb-[80px] text-white flex justify-between  w-full'>
         <div className='flex flex-col '>

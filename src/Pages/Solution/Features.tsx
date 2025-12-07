@@ -28,18 +28,18 @@ const Features = () => {
       ) : (
         <>
           <div>
-            <p className='font-[Manrope] text-[34px] text-[#03377D]  '>{solutionFeatureText}</p>
+            <p className='font-[Manrope] text-[34px] text-[#0259cc]  '>{solutionFeatureText}</p>
             <p className='text-[#848484] font-semibold text-[16px] font-[Lato] '>{solutionFeatureSubtext}</p>
           </div>
           <div className='grid grid-cols-3 gap-[20px] mt-[20px] pt-[30px]'>
           {aboutLinks.map((item, index) => (
             <div key={index} className='flex flex-col cursor-pointer rounded-[16px] bg-gradient-to-r from-[#33B7FF] via-white via-[#0ea5e9] to-[#33B7FF] bg-[length:300%_100%] hover:bg-[position:100%_0] transition-all duration-700 p-[1px] h-full'>
               <div className='bg-white rounded-[15px] p-[23px] flex flex-col h-full'>
-              <div className='w-full mb-4'>
-                <img src={item.image} className='w-full h-auto object-cover' />
+              <div className='w-full h-[200px] mb-4'>
+                <img src={item.image} className='w-full h-full object-cover' />
               </div>
               <div className='flex flex-col'>
-                <p className='font-[Manrope] text-[20px] text-[#03377D] font-medium mb-2'>{item.header}</p>
+                <p className='font-[Manrope] text-[20px] text-[#0259cc] font-medium mb-2'>{item.header}</p>
                 <p className='text-[#848484] font-normal leading-6 text-[14px] font-[Lato]'>{item.text}</p>
               </div>
               </div>

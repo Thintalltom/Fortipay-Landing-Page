@@ -107,7 +107,7 @@ const Banner = () => {
         
         </div>
         <div>
-            <h4 className='text-[#03377D] font-[Manrope] text-[36px]'>Get In Touch</h4>
+            <h4 className='text-[#0259cc] font-[Manrope] text-[36px]'>Get In Touch</h4>
           <p className='text-[#848484] font-[Lato] text-[16px] '>Explore how Sirius can transform your workflow and elevate your team’s collaboration.</p>
         </div>
         <div className='grid grid-cols-2 relative top-[50px] w-full '>
@@ -149,7 +149,7 @@ const Banner = () => {
             type='text' 
             value={formData.name}
             onChange={(e) => setFormData({...formData, name: e.target.value})}
-            className='w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#03377D]' 
+            className='w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#0259cc]' 
             placeholder='Enter your name' 
             required 
           />
@@ -161,7 +161,7 @@ const Banner = () => {
             value={formData.email}
             onChange={handleEmailChange}
             className={`w-full p-3 border rounded-lg focus:outline-none ${
-              emailError ? 'border-red-500 focus:border-red-500' : 'border-gray-300 focus:border-[#03377D]'
+              emailError ? 'border-red-500 focus:border-red-500' : 'border-gray-300 focus:border-[#0259cc]'
             }`}
             placeholder='Enter your email' 
             required 
@@ -174,7 +174,7 @@ const Banner = () => {
             rows={4} 
             value={formData.message}
             onChange={(e) => setFormData({...formData, message: e.target.value})}
-            className='w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#03377D] resize-none' 
+            className='w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#0259cc] resize-none' 
             placeholder='Enter your message'
             required
           ></textarea>
@@ -184,7 +184,7 @@ const Banner = () => {
           disabled={isLoading || !isFormValid()}
           className={`py-3 px-6 rounded-full font-[Manrope] font-semibold transition-all ${
             isFormValid() && !isLoading 
-              ? 'bg-[#03377D] text-white hover:bg-[#024a8a]' 
+              ? 'bg-[#0259cc] text-white hover:bg-[#024a8a]' 
               : 'bg-gray-300 text-gray-500 cursor-not-allowed'
           }`}
         >

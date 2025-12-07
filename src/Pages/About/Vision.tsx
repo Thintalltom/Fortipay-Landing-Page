@@ -7,7 +7,7 @@ const Vision = () => {
 
             <div className='flex justify-center flex-col items-center'>
                 <TagButton>FEATURES OVERVIEW</TagButton>
-                <h3 className='text-[#03377D] font-[Manrope] font-medium text-[38px]'>Vision & Values</h3>
+                <h3 className='text-[#0259cc] font-[Manrope] font-medium text-[38px]'>Vision & Values</h3>
                 <p className='text-[#848484] text-[16px] font-[Lato] font-normal'>Territories reach commitment book obviously last manager.</p>
             </div>
             {/* <div className='flex flex-col gap-[10px]'>

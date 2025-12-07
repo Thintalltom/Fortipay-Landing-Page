@@ -22,7 +22,7 @@ const Banner = () => {
         <Navbar />
         <div className='flex justify-center items-center relative z-10 h-full px-[80px] pt-[80px]  flex-col'>
           <TagButton>INSIGHTS & IDEAS</TagButton>
-          <h3 className='font-[Manrope] text-[38px] text-[#03377D] w-[700px] max-w-[800px] min-w-[500px] text-center'>Latest Blog Post</h3>
+          <h3 className='font-[Manrope] text-[38px] text-[#0259cc] w-[700px] max-w-[800px] min-w-[500px] text-center'>Latest Blog Post</h3>
           <p className='text-[#848484] font-regular font-[Lato] text-center w-[550px] max-w-[600px] min-w-[400px] text-[16px]'>Discover stories, tips, and resources to inspire your next big idea.</p>
         </div>
         <BlogTabs onLoadMore={handleLoadMore} showLoadMore={showLoadMore} />

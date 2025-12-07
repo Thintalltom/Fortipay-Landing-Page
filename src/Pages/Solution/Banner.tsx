@@ -34,11 +34,11 @@ const Banner = () => {
           <div className='grid grid-cols-2  w-full'>
             <div className=' flex flex-col w-[631px] '>
               <h3 className='w-[500px] pt-[50px] text-[42px] font-[Manrope] font-medium'> {solutionBannerText}
-                {/* <span className='text-[#5579A8]'>Fraud Protection That</span> <span className='text-[#03377D]'>Adapts to Your Business</span> */}
+                {/* <span className='text-[#5579A8]'>Fraud Protection That</span> <span className='text-[#0259cc]'>Adapts to Your Business</span> */}
               </h3>
               <div className="flex gap-[20px] pt-[20px]">
-                <button className='bg-[#03377D] text-white font-[Lato] min-w-[180px] max-w-[185px] font-normal text-[16px] py-[10px] px-[20px] rounded-[40px]'>Get Started</button>
-                <button className=' text-[#03377D] font-[Lato] min-w-[180px] max-w-[185px] font-normal text-[16px] py-[10px] px-[20px] rounded-[40px] bg-[#EBF8FF]'>Request a Demo</button>
+                <button className='bg-[#0259cc] text-white font-[Lato] min-w-[180px] max-w-[185px] font-normal text-[16px] py-[10px] px-[20px] rounded-[40px]'>Get Started</button>
+                <button className=' text-[#0259cc] font-[Lato] min-w-[180px] max-w-[185px] font-normal text-[16px] py-[10px] px-[20px] rounded-[40px] bg-[#EBF8FF]'>Request a Demo</button>
               </div>
             </div>
             <div className=''>

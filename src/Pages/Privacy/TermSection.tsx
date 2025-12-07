@@ -19,7 +19,7 @@ export function TermsSection({
       .map((line, index) => {
         if (line.startsWith('💠')) {
           return (
-            <div key={index} className="font-semibold text-[#03377D] mt-4 mb-2">
+            <div key={index} className="font-semibold text-[#0259cc] mt-4 mb-2">
               {line}
             </div>
           )
@@ -47,7 +47,7 @@ export function TermsSection({
       id={id}
       className="p-6 mb-6 scroll-mt-4"
     >
-      <h2 className="text-[24px] font-medium mb-4 text-[#03377D] font-[Manrope]">
+      <h2 className="text-[24px] font-medium mb-4 text-[#0259cc] font-[Manrope]">
         {number}. {title}
       </h2>
       <div className="text-[#848484] font-[Lato] font-regular">

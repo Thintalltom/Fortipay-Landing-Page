@@ -15,7 +15,7 @@ const Banner = () => {
                     <img src={Privacybg} className="absolute inset-0 w-full h-full object-cover rounded-[24px]" />
                 <div className='relative z-10 flex justify-center items-center flex-col'>
                     <TagButton>{policySubText}</TagButton>
-                    <h4 className='text-[#03377D] font-[Manrope] text-[36px]'>{privacyText}</h4>
+                    <h4 className='text-[#0259cc] font-[Manrope] text-[36px]'>{privacyText}</h4>
                     <p className='text-[#848484] text-center font-[Lato] text-[16px] '>{policyText}</p>
                 </div>
                 </div>

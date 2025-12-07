@@ -11,7 +11,7 @@ const BlogSection = () => {
     <section className='px-[64px] py-[80px]'>
         <div className='flex justify-center items-center flex-col'>
          <TagButton>SECTION TITLE</TagButton>
-                 <p className="text-[38px] text-[#03377D] font-[Manrope] font-medium">Latest blog posts</p>
+                 <p className="text-[38px] text-[#0259cc] font-[Manrope] font-medium">Latest blog posts</p>
         <p className="font-[Lato] text-[#848484] mb-[80px] font-normal">Discover stories, tips, and resources to inspire your next big idea.</p>
         </div>
         <div>
@@ -40,7 +40,7 @@ const BlogSection = () => {
                   />
                 </div>
                 <div className='flex flex-col gap-3 p-6 flex-grow'>
-                  <h3 className='font-[Manrope] font-medium text-[#03377D] text-[18px] leading-tight line-clamp-2'>
+                  <h3 className='font-[Manrope] font-medium text-[#0259cc] text-[18px] leading-tight line-clamp-2'>
                     {post.fields.title}
                   </h3>
                   <p className='font-[Lato] font-normal text-[#848484] text-[14px] leading-relaxed line-clamp-3'>
@@ -63,7 +63,7 @@ const BlogSection = () => {
         }
       </div>
       <div className='flex justify-center items-center mt-[80px]'>
-        <button className='bg-[#03377D] text-white font-[Lato] font-normal text-[16px] py-[10px] px-[20px] rounded-[40px] hover:bg-[#02285a] transition-colors'>View all posts</button>
+        <button className='bg-[#0259cc] text-white font-[Lato] font-normal text-[16px] py-[10px] px-[20px] rounded-[40px] hover:bg-[#02285a] transition-colors'>View all posts</button>
       </div>
         </div>
 

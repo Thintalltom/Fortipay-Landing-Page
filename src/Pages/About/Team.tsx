@@ -29,7 +29,7 @@ const Team = () => {
     <div className='px-[80px] pt-[80px] pb-[40px]'>
         <div className='flex justify-center items-center flex-col'>
         <TagButton>MEET OUR TEAM</TagButton>
-        <h3 className='text-[#03377D] font-[Manrope] font-medium text-[38px]'>The Brains Behind the Product</h3>
+        <h3 className='text-[#0259cc] font-[Manrope] font-medium text-[38px]'>The Brains Behind the Product</h3>
         <p className='text-[#848484] text-[16px] font-[Lato] font-normal'>crew building things we believe in together.</p>
         </div>
         <div className='grid grid-cols-5 gap-[20px] mt-[40px]'>

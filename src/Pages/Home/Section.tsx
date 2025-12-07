@@ -7,7 +7,7 @@ const Section = () => {
     <div className='bg-white '>
       <div className='flex justify-center flex-col gap-[20px] items-center'>
         <TagButton>SECTION TITLE</TagButton>
-        <p className="text-[38px] text-[#03377D] font-[Manrope] font-medium">{customerText}</p>
+        <p className="text-[38px] text-[#0259cc] font-[Manrope] font-medium">{customerText}</p>
         <p className="font-[Lato] text-[#848484] mb-[80px] font-normal">{customerSubText}</p>
       </div>
         <InfiniteScroll />

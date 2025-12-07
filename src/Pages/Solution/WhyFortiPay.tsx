@@ -23,7 +23,7 @@ const WhyFortiPay = () => {
     <div className='px-[80px] pt-[80px] pb-[40px]'>
         <div className='flex flex-col justify-center items-center gap-[20px]'>
             <TagButton>FEATURES OVERVIEW</TagButton>
-            <h3 className='text-[#03377D] font-[Manrope] text-[46px] font-medium'>Why Corvyn AI is Different</h3>
+            <h3 className='text-[#0259cc] font-[Manrope] text-[46px] font-medium'>Why Corvyn AI is Different</h3>
             <p className='text-[#848484] font-[Lato] font-normal text-[16px]'>Manager eager one search timepoint race. Goalposts regroup do yet invite vec language slipstream web hop.</p>
 
              <ComparisonTable columns={columnJson} rows={rowsJson} />
