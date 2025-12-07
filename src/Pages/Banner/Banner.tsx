@@ -25,9 +25,9 @@ const Banner = () => {
             </>
           )}
         </div>
-        <div className="flex gap-[300px]  w-full justify-center items-center mt-[150px] ">
-          <div className='w-[250px] h-[300px] bg-green-500'>Image One</div>
-          <div className='w-[250px] h-[300px] bg-blue-500'>Image Two</div>
+        <div className="flex gap-[300px]  w-full justify-center items-end mt-[150px] ">
+          <div className='w-[400px] h-[400px]'><img src='https://images.ctfassets.net/t38lsvt2xzqb/Vgv8XXKqaCPwiVXA0n8ts/1aaa7e41fd8c1ee821c68e8ad7b77fd8/sim_lifecycle_img.png?h=250' className='w-full h-full object-cover' /></div>
+          <div className='w-[400px] h-[400px]'><img src='https://images.ctfassets.net/t38lsvt2xzqb/36ShLetAwJgcWT3WKtEeIf/823588e68f589952b5e118a1d5c1d6f0/corvyn1ng2.png?h=250' className='w-full h-full object-cover' /></div>
         </div>
       </div>
     </div>

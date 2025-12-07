@@ -30,9 +30,9 @@ const Footer = () => {
   return (
     <footer className='relative z-10 bg-[#03377D] w-full mt-auto min-h-[200px] flex flex-col items-center justify-center'>
       <img src={FooterImg} className="absolute inset-0 w-full h-full object-cover" />
-      <div className='p-[80px] text-white flex justify-between  w-full'>
+      <div className='px-[80px] pt-[40px] pb-[80px] text-white flex justify-between  w-full'>
         <div className='flex flex-col '>
-          <img src={"https://images.ctfassets.net/t38lsvt2xzqb/4KgJmfTc9gAmfDkZKj05os/a8f178ec2d18feaa7cb4582677048353/CorvynAI-removebg-preview.png"} className='w-[200px]  h-fit' />
+          <img src={"https://images.ctfassets.net/t38lsvt2xzqb/1yBv78sYuQLzO5zRLYYc7K/ff9f0d57518c9b09eb73671361438dbb/Corvyn_AI_x_Interswitch-removebg-preview.png"} className='w-[300px] h-fit object-contain mb-[-40px] ' />
           <div className='w-[410px]  h-fit text-[14px] '>
             <p>Shark illustration barn seems parking hits tiger globalize forward who's. Cross-pollination optimize obviously due deploy day stronger. Practices looking looking caught supervisor principles eat. Needle field including after where door.</p>
           </div>
