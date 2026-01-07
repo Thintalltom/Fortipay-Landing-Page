@@ -5,6 +5,7 @@ import FooterImg from '../../assets/FooterFortpay.png'
 // import FortyLogo from '../../assets/FortiPay.svg'
 import { client } from '../../Contentful'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 const Footer = () => {
   const [footerData, setFooterData] = useState<any[]>([])
   const [isLoading, setIsLoading] = useState(true)
@@ -55,7 +56,7 @@ const Footer = () => {
                 <p className='font-semibold text-[16px]'>{footer.header}</p>
                 <div className='flex flex-col gap-[8px]'>
                   {footer.items.map((text: any, textIndex: number) => (
-                    <a key={textIndex} href={text?.link}   className='text-[14px] cursor-pointer opacity-80'>{text.label}</a>
+                    <Link key={textIndex} to={text?.link} className='text-[14px] cursor-pointer opacity-80'>{text.label}</Link>
                   ))}
                 </div>
               </div>
