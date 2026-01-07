@@ -55,7 +55,7 @@ const Footer = () => {
                 <p className='font-semibold text-[16px]'>{footer.header}</p>
                 <div className='flex flex-col gap-[8px]'>
                   {footer.items.map((text: any, textIndex: number) => (
-                    <a key={textIndex} href={text?.link} target="_blank" rel="noopener noreferrer" className='text-[14px] cursor-pointer opacity-80'>{text.label}</a>
+                    <a key={textIndex} href={text?.link}   className='text-[14px] cursor-pointer opacity-80'>{text.label}</a>
                   ))}
                 </div>
               </div>
